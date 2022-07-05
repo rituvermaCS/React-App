@@ -13,8 +13,8 @@ function Post() {
   const columns = [
     { field: "userId", headerName: "USERID", width: 125 },
     { field: "id", headerName: "ID", width: 125 },
-    { field: "title", headerName: "TITLE", width: 325 },
-    { field: "body", headerName: "BODY", width: 700 },
+    { field: "title", headerName: "TITLE", width: 425 },
+    { field: "body", headerName: "BODY", width: 850 },
   ];
   const [show, setShow] = useState(true);
   setTimeout(() => {
@@ -34,7 +34,7 @@ function Post() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",
-          marginTop: "7%",
+          marginTop: "10%",
         }}
       >
         {show ? (

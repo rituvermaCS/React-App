@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Post from "./component/post";
 import Comment from "./component/comments";
 function App() {
-  const name = prompt("Please enter your name");
+  const name = prompt("PLEASE ENTER YOUR NAME");
   sessionStorage.setItem("name", name);
 
   return (

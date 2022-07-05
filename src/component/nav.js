@@ -10,29 +10,33 @@ import { CssBaseline } from "@mui/material";
 const Navbar = ({ name }) => {
   return (
     <>
-      <div style={{ height: "13%" }}>
+      <div style={{ height: "10%" }}>
         <Box sx={{ flexGrow: 1 }}>
           <CssBaseline />
           <AppBar
             position="fixed"
-            color="inherit"
-            sx={{ boxShadow: 0, justifySelf: "flex-start", height: "13%" }}
+            color="success"
+            sx={{ boxShadow: 0, justifySelf: "flex-start", height: "8%" }}
           >
             <Toolbar>
+
               <Link to="/" style={{ textDecoration: "none" }}>
                 <Typography
                   sx={{
-                    flexGrow: 3,
-                    fontFamily: "Quicksand,sans-serif",
-                    fontSize: "30px",
-                    fontWeight: "800",
-                    color: "#0B2060",
+                      borderRadius: "100px",
+                      backgroundColor: "#000000",
+                      height: "30px",
+                      width: "250px",
                   }}
                 >
-                  infraCloud
+                    <div className="topnav__search">
+            <input type="text" placeholder='Search here...'/>
+            <i className='bx bx-search'></i>
+                   </div>
                 </Typography>
               </Link>
 
+              
               <Toolbar
                 sx={{
                   display: "flex",
@@ -42,26 +46,27 @@ const Navbar = ({ name }) => {
                 }}
               >
                 <Typography
-                  fontSize={30}
+                  fontSize={35}
                   fontWeight={400}
                   sx={{
                     flexGrow: "1",
-                    fontSize: "30px",
+                    fontSize: "35px",
                     fontWeight: "800",
-                    color: "#0B2060",
-                    fontFamily: "Quicksand,sans-serif",
+                    color: "#000000",
+                    fontFamily: "georgia,garamond,serif",
                     textTransform: "capitalize",
                   }}
                 >
-                  Welcome {sessionStorage.getItem("name")}
+                  Hello {sessionStorage.getItem("name")}
                 </Typography>
+
 
                 <Link to="/comment" style={{ textDecoration: "none" }}>
                   <Button
                     variant="contained"
                     sx={{
                       borderRadius: "50px",
-                      backgroundColor: "#5913B0",
+                      backgroundColor: "#000000",
                       height: "40px",
                       width: "115px",
                     }}
@@ -69,6 +74,7 @@ const Navbar = ({ name }) => {
                     Comments
                   </Button>
                 </Link>
+
               </Toolbar>
             </Toolbar>
           </AppBar>

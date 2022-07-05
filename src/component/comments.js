@@ -12,9 +12,9 @@ function Comment() {
   const columns = [
     { field: "postId", headerName: "POSTID", width: 125 },
     { field: "id", headerName: "ID", width: 125 },
-    { field: "name", headerName: "NAME", width: 200 },
+    { field: "name", headerName: "NAME", width: 275 },
     { field: "email", headerName: "EMAIL", width: 200 },
-    { field: "body", headerName: "BODY", width: 700 },
+    { field: "body", headerName: "BODY", width: 825 },
   ];
   useEffect(() => {
     dispatch(getComment());
@@ -28,7 +28,7 @@ function Comment() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",
-          marginTop: "7%",
+          marginTop: "10%",
         }}
       >
         <div style={{ height: "calc(100vh - 25vh)", width: "85%" }}>

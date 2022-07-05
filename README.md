@@ -2,6 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Clone Commands
+
+### `git clone 'https://github.com/rituvermaCS/React-App'`
+
+### `cd infracloud`
+### `npm i`
+### `npm i react-router-dom --save`
+### `npm i @mui-material @emotion/react @emotion/styled`
+### `npm i @mui/x-data-grid`
+### `npm i --save redux`
+### `npm i react-redux`
+### `npm add redux-thunk`
+### `npm i axios`
+### `npm start`
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:

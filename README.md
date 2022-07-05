@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Clone Repo Commands
 
-### `git clone 'https://github.com/rituvermaCS/React-App'`
+### `git clone '[https://github.com/rituvermaCS/React-App]'(https://github.com/rituvermaCS/React-App)`
 
 ### `cd infracloud`
 

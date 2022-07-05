@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Post />}></Route>
-          <Route exact path="/comments" element={<Comment />}></Route>
+          <Route exact path="/comment" element={<Comment />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

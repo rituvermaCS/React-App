@@ -1,9 +1,9 @@
-import request from "request-promise";
+import axios from "../axios";
 
 export const getPost = () => async (dispatch, state) => {
   try {
     console.log("call");
-    const getPostData = await request.get("/posts", {
+    const getPostData = await axios.get("/posts", {
       headers: { username: sessionStorage.getItem("name") },
     });
     dispatch({ type: "postSuccess", post: getPostData.data });
@@ -14,7 +14,7 @@ export const getPost = () => async (dispatch, state) => {
 export const getComment = () => async (dispatch, state) => {
   try {
     console.log("call");
-    const getPostData = await request.get("/comments");
+    const getPostData = await axios.get("/comments");
     dispatch({ type: "commentSuccess", comment: getPostData.data });
     console.log("end");
     console.log(state);
